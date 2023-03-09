@@ -9,8 +9,6 @@ function Contact() {
             <div class="contact-form-wrapper d-flex justify-content-center">
                 <form action="#" class="contact-form">
                     <h5 class="title">Contact Me</h5>
-                    <p class="description">Feel free to contact me.
-                    </p>
                     <div>
                         <input type="text" class="form-control rounded border-white mb-3 form-input" id="name" placeholder="Name" required/>
                     </div>
