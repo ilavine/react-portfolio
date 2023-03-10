@@ -5,15 +5,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Navbar() {
     return (
-        <div class="container">
-            <header class="d-flex flex-wrap justify-content-end py-3 mb-4 border-bottom">
+        <nav class="navbar navbar-light justify-content-end border-bottom">
                 <ul class="nav nav-pills">
-                    <li><Link to={'/'} class="nav-link"> About </Link></li>
-                    <li><Link to={'/contact'} class="nav-link">Contact Me</Link></li>
-                    <li><Link to={'/resume'} class="nav-link">Resume</Link></li>
+                    <li class="nav-link"><Link to={'/'}> About </Link></li>
+                    <li  class="nav-link"><Link to={'/resume'}>Resume</Link></li>
+                    <li class="nav-link"><Link to={'/contact'} >Contact Me</Link></li>
                 </ul>
-            </header>
-      </div>
+      </nav>
     );
 }
     
