@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -7,10 +8,9 @@ function Navbar() {
         <div class="container">
             <header class="d-flex flex-wrap justify-content-end py-3 mb-4 border-bottom">
                 <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="#About" class="nav-link active" aria-current="page">About</a></li>
-                    <li class="nav-item"><a href="#Portfolio" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item"><a href="#Contact" class="nav-link">Contact Me</a></li>
-                    <li class="nav-item"><a href="#Resumes" class="nav-link">Resume</a></li>
+                    <li><Link to={'/'} class="nav-link"> About </Link></li>
+                    <li><Link to={'/contact'} class="nav-link">Contact Me</Link></li>
+                    <li><Link to={'/resume'} class="nav-link">Resume</Link></li>
                 </ul>
             </header>
       </div>

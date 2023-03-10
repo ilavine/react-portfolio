@@ -19,7 +19,7 @@ function Contact() {
                         <textarea id="message" class="form-control rounded border-white mb-3 form-text-area" rows="5" cols="30" placeholder="Message" required></textarea>
                     </div>
                     <div class="submit-button-wrapper">
-                        <input type="submit" value="Send"/>
+                        <input class="submit-button" type="submit" value="Send"/>
                     </div>
                 </form>
             </div>

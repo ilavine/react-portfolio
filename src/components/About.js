@@ -1,5 +1,5 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 
 function About() {
   return (
@@ -24,19 +24,19 @@ function About() {
                 type="button"
                 class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"
               >
-                <i class="fa-brands fa-linkedin">LinkedIn</i>
+                LinkedIn
               </button>
               <button
                 type="button"
                 class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"
               >
-                <i class="fa-brands fa-square-github">GitHub</i>
+                GitHub
               </button>
               <button
                 type="button"
                 class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"
               >
-                <i class="fa-solid fa-envelope">E-mail</i>
+                E-mail
               </button>
             </div>
           </div>
