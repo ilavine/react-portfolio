@@ -3,17 +3,16 @@ import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Contact() {
-  const [formData, setFormData] = useState({ subject: "", message: ""});
+  const [formData, setFormData] = useState({ subject: "", message: "" });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  
+
     const url = `mailto:yulia.lavine@gmail.com?subject=${formData.subject}&body=${formData.message}`;
     window.open(url);
-    
   };
   return (
-    <div>
+    <div className="contact-form">
       <div className="contact-form-wrapper d-flex justify-content-center">
         <form action="#" className="contact-form" onSubmit={handleSubmit}>
           <h5 className="title">Contact Me</h5>
@@ -39,9 +38,9 @@ function Contact() {
               placeholder="Message"
               required
               value={formData.message}
-                onChange={(e) => {
-                  setFormData({ ...formData, message: e.target.value });
-                }}
+              onChange={(e) => {
+                setFormData({ ...formData, message: e.target.value });
+              }}
             ></textarea>
           </div>
           <div className="submit-button-wrapper">

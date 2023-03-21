@@ -24,8 +24,8 @@ h3 {
 
 .contact-form-wrapper {
   background-color: rgba(33,37,41);
-  margin: 10px;
-  padding: 100px;
+  margin-top: 100px;
+  padding: 10px;
 }
 
 .title {
@@ -38,3 +38,13 @@ h3 {
   padding: 10px;
 }
 
+#profileImg {
+  height: 15%;
+  width: 15%;
+  border-radius: 50%;
+  border: 5px solid #0dcaf0;
+}
+
+#tag {
+  margin: 10px;
+}

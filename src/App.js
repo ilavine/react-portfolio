@@ -1,25 +1,23 @@
-import React from 'react';
-import './App.css';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from "./components/Navbar";
+import React from "react";
+import "./App.css";
+import { HashRouter as Router, Routes } from "react-router-dom";
+import Banner from "./components/Banner";
 import About from "./components/About";
 import Footer from "./components/Footer";
-import Contact from './components/Contact';
-import Resume from './components/Resume';
-
+import Contact from "./components/Contact";
+import ProjectMap from "./components/ProjectMap";
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      <Banner />
+      <About />
       <Routes>
-            <Route path="/" element={<About />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/contact" element={<Contact />} />
-        </Routes>
+      </Routes>
+      <ProjectMap />
+      <Contact />
       <Footer />
-
-  </Router>
+    </Router>
   );
 }
 
