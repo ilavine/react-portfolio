@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.4fd6c673.css",
-    "main.js": "/react-gh-pages/static/js/main.6a90034c.js",
-    "static/media/headshot.jpeg": "/react-gh-pages/static/media/headshot.82c120a4ee5f8b54f88a.jpeg",
-    "static/media/resume.pdf": "/react-gh-pages/static/media/resume.e2461f556dea8ff31842.pdf",
-    "index.html": "/react-gh-pages/index.html",
-    "main.4fd6c673.css.map": "/react-gh-pages/static/css/main.4fd6c673.css.map",
-    "main.6a90034c.js.map": "/react-gh-pages/static/js/main.6a90034c.js.map"
+    "main.css": "/react-portfolio/static/css/main.4fd6c673.css",
+    "main.js": "/react-portfolio/static/js/main.6f57b07c.js",
+    "static/media/headshot.jpeg": "/react-portfolio/static/media/headshot.82c120a4ee5f8b54f88a.jpeg",
+    "static/media/resume.pdf": "/react-portfolio/static/media/resume.e2461f556dea8ff31842.pdf",
+    "index.html": "/react-portfolio/index.html",
+    "main.4fd6c673.css.map": "/react-portfolio/static/css/main.4fd6c673.css.map",
+    "main.6f57b07c.js.map": "/react-portfolio/static/js/main.6f57b07c.js.map"
   },
   "entrypoints": [
     "static/css/main.4fd6c673.css",
-    "static/js/main.6a90034c.js"
+    "static/js/main.6f57b07c.js"
   ]
 }
