@@ -48,3 +48,12 @@ h3 {
 #tag {
   margin: 10px;
 }
+
+.card {
+  margin-top: 20px;
+}
+
+.project-img {
+  height: 300px;
+  width: fit-content;
+}

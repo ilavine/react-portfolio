@@ -11,7 +11,7 @@ function ProjectCard({ project }) {
 
   return (
     <div className="card">
-      <img className="card-img-top" src={project.image} alt={project.name} />
+      <img className="card-img-top project-img" src={project.image} alt={project.name} />
       <div className="card-body">
         <h3 className="card-title">{project.name}</h3>
         <p className="card-text">{project.description}</p>
