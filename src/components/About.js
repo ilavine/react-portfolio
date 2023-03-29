@@ -6,7 +6,7 @@ function About() {
     <div className="bg-light text-secondary px-4 py-5 text-center">
       <div className="py-5">
         <h1 className="display-5 fw-bold text-blue">About Me</h1>
-        <img id="profileImg" src={headshot} alt="headshot" />
+        <img id="profileImg" className="col-md-4 float-md-start mb-6 ms-md-6" src={headshot} alt="headshot" />
         <div className="col-lg-6 mx-auto">
           <p className="fs-5 mb-4">
             {" "}

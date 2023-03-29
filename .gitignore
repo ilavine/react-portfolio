@@ -104,6 +104,6 @@ dist
 .tern-port
 
 #Node files
-.package-lock.json
-.previewConfig.json
+package-lock.json
+previewConfig.json
 node_modules
