@@ -1,55 +1,29 @@
-import React from "react";
-import { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
-function Contact() {
-  const [formData, setFormData] = useState({ subject: "", message: "" });
+export default function Contact() {
+  const form = useRef();
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
 
-    const url = `mailto:yulia.lavine@gmail.com?subject=${formData.subject}&body=${formData.message}`;
-    window.open(url);
+    emailjs.sendForm('service_c84dmmi', 'template_i62umt9', form.current, 'scLqnv0zDQ3riuiXe')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
   };
+
   return (
-    <div className="contact-form">
-      <div className="contact-form-wrapper d-flex justify-content-center">
-        <form action="#" className="contact-form" onSubmit={handleSubmit}>
-          <h5 className="title">Contact Me</h5>
-          <div>
-            <input
-              type="text"
-              className="form-control rounded border-white mb-3 form-input"
-              id="name"
-              placeholder="Subject"
-              required
-              value={formData.subject}
-              onChange={(e) => {
-                setFormData({ ...formData, subject: e.target.value });
-              }}
-            />
-          </div>
-          <div>
-            <textarea
-              id="message"
-              className="form-control rounded border-white mb-3 form-text-area"
-              rows="5"
-              cols="30"
-              placeholder="Message"
-              required
-              value={formData.message}
-              onChange={(e) => {
-                setFormData({ ...formData, message: e.target.value });
-              }}
-            ></textarea>
-          </div>
-          <div className="submit-button-wrapper">
-            <input className="submit-button" type="submit" value="Send" />
-          </div>
-        </form>
-      </div>
-    </div>
+    <form ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" />
+    </form>
   );
 }
-
-export default Contact;
