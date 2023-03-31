@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Badge from "react-bootstrap/Badge";
+import "./ProjectCard.css"
 
 function ProjectCard({ project }) {
   const toolsList = project.tools.map((tool, index) => (
