@@ -1,9 +1,9 @@
 # React Portfolio with Bootstrap CSS
-This is a React Portfolio application that uses Bootstrap CSS framework for styling. This project is designed to showcase your skills and experiences as a developer. It is fully responsive and mobile-friendly.
+This is a React Portfolio application that uses Bootstrap CSS framework for styling. This project is designed to showcase skills and experiences as a developer. It is fully responsive and mobile-friendly.
 
 [Deployed Application](https://ilavine.github.io/react-portfolio/)
 
-# Getting Started
+## Getting Started
 To get started with this project, you will need to have Node.js and npm installed on your machine. Once you have them installed, follow these steps:
 
 * Clone this repository to your local machine using git clone https://github.com/ilavine/react-portfolio.git
@@ -12,10 +12,11 @@ To get started with this project, you will need to have Node.js and npm installe
 * Start the development server using npm start
 * Open your browser and navigate to http://localhost:3000 to view the app.
 
-# Features
+## Features
 * Responsive design using Bootstrap CSS
-* ShowcaseA skills and experiences
-## Technologies Used
+* Showcases skills and experiences
+
+### Technologies Used
 * React.js
 * Bootstrap CSS
 
