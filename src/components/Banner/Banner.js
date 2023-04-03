@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import resume from "../../assets/resume.pdf";
+import "./Banner.css"
 
 function Banner() {
   return (
     <>
       <div className="bg-dark text-secondary px-4 py-5 text-center">
         <div className="py-5">
-          <h1 className="display-5 fw-bold text-white">
+          <h1 className="display-5 fw-bold text-white typewriter">
             Yulia Lavine Portfolio
           </h1>
           <div className="col-lg-6 mx-auto">
