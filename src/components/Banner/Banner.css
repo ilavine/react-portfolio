@@ -1,35 +1,80 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
-.typewriter {
-  border-right: solid 3px rgb(66, 171, 231)!important;
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 20px;
-  color: rgba(255, 255, 255, 0.7);
-}
-/* Animation */
-.typewriter {
-  animation: animated-text 4s steps(29, end) 1s 1 normal both,
-    animated-cursor 600ms steps(29, end) infinite;
+.banner {
+  height: 400px;
 }
 
-/* text animation */
-
-@keyframes animated-text {
-  from {
-    width: 0;
-  }
-  to {
-    width: 500px;
-  }
+.contact-buttons {
+  margin-top: 60px;
 }
 
-/* cursor animations */
+.btn {
+  height: 70px!important;
+  width: 200px!important;
+}
 
-@keyframes animated-cursor {
-  from {
-    border-right-color: rgba(0, 255, 0, 0.75);
-  }
-  to {
-    border-right-color: transparent;
-  }
+@import url("https://fonts.googleapis.com/css?family=Raleway:400");
+
+* {
+	box-sizing: border-box;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+:root {
+	--d: 2500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: #0dcaf0;
+	--c2: rgba(168, 239, 255, 0.1);
+}
+
+.btn {
+	border: 0.3rem solid;
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+}
+
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
 }
