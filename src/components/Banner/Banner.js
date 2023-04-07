@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import resume from "../../assets/resume.pdf";
 import "./Banner.css"
 import Intro from "./Intro"
+import { FaLinkedin } from 'react-icons/fa';
 
 function Banner() {
   return (
@@ -20,15 +21,18 @@ function Banner() {
               >
                 <button
                   type="button"
-                  className="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"
-                > LinkedIn
+                  className="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold btn-banner "
+                > 
+                <div class="front">LinkedIn</div>
+                <div class="back"><FaLinkedin/></div>
+                
 
                 </button>
               </Link>
               <Link to="https://github.com/ilavine" target="_blank">
                 <button
                   type="button"
-                  className="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"
+                  className="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold btn-banner "
                 >
                   GitHub
                 </button>
@@ -36,7 +40,7 @@ function Banner() {
               <Link to="mailto:yulia.lavine@gmail.com" target="_blank">
                 <button
                   type="button"
-                  className="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"
+                  className="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold btn-banner "
                 >
                   E-mail
                 </button>
@@ -44,7 +48,7 @@ function Banner() {
               <a href={resume} target="_blank" rel="noreferrer">
                 <button
                   type="button"
-                  className="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"
+                  className="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold btn-banner "
                 >
                   Resume
                 </button>
